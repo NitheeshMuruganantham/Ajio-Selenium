@@ -66,16 +66,16 @@ import pom.Buying;
 			
 		}
 
-		@When("Placing the order")
-		public void placing_the_order() throws InterruptedException {
+		@When("Placing the order for shirt {int} and {int}")
+		public void placing_the_order_for_shirt_and(Integer int1, Integer int2) throws InterruptedException {
 			
 			Thread.sleep(2000);
 			gettingWinHand();
-			otherWindow(1);
+			otherWindow(int1);
 			Thread.sleep(500);
 			buying.shirtSize();
 			buying.addToBag();
-			otherWindow(2);
+			otherWindow(int2);
 			Thread.sleep(500);
 			buying.shirtSize();
 			buying.addToBag();

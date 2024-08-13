@@ -58,7 +58,8 @@ public class Buying extends BasePom {
 	}	
 	
 	public String mobNum() {
-		return conMobnum.getText();
+		String monNUMValue= conMobnum.getText();
+		return monNUMValue;
 		
 	}
 	
